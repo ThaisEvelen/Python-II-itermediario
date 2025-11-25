@@ -2,8 +2,8 @@
 #Faça um procedimento recursivo que receba dois valores inteiros a e b e 
 #imprime o intervalo fechado entre eles. Se a > b imprima uma mensagem de erro.
 
-a = input(int("Digite um valor:"))
-b = input(int("Digite um valor maior que o anterior:"))
+a = int(input("Digite um valor:"))
+b = int(input("Digite um valor maior que o anterior:"))
 
 def intervalo (a, b):
     if (a < b):
