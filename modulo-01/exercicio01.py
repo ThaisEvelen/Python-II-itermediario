@@ -6,7 +6,7 @@ a = int(input("Digite um valor:"))
 b = int(input("Digite um valor maior que o anterior:"))
 
 def intervalo (a, b):
-    if (a < b):
+    if (a > b):
         print("Valores invalidos")     
     elif(a == b):
         print("Caso base")
