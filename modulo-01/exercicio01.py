@@ -2,16 +2,14 @@
 #Faça um procedimento recursivo que receba dois valores inteiros a e b e 
 #imprime o intervalo fechado entre eles. Se a > b imprima uma mensagem de erro.
 
-a = int(input("Digite um valor:"))
-b = int(input("Digite um valor maior que o anterior:"))
 
-def intervalo (sequencia):
-    if (a > b):
+def intervalo (a, b):
+    if a > b:
         print("Valores invalidos")     
-    elif(a == b):
-        print("Caso base")
-        return a 
+    elif a == b:
+        print(a, end = '')
     else:
-        print(f'{a} {b-a} {b}')
-        return (b-a)
-print(f'A sequencia numérica é {b-a}')
+        print(a, end = '')
+        intervalo(a+1, b)
+
+intervalo (1, 10)
