@@ -5,13 +5,13 @@
 a = int(input("Digite um valor:"))
 b = int(input("Digite um valor maior que o anterior:"))
 
-def intervalo (a, b):
+def intervalo (sequencia):
     if (a > b):
         print("Valores invalidos")     
     elif(a == b):
         print("Caso base")
-        return a
+        return a 
     else:
-        print(f'{b-a}')
+        print(f'{a} {b-a} {b}')
         return (b-a)
 print(f'A sequencia numérica é {b-a}')
