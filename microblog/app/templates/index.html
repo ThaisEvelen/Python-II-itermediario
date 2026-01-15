@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Bem-vindo, {{ user.username }}</h2>
+<img src="{{ user.foto }}" alt="Foto de perfil" width="150">
+<p>{{ user.bio }}</p>
+
+<h3>Timeline</h3>
+{% if posts %}
+  {% for post in posts %}
+    <p><b>{{ post.author.username }}</b>: {{ post.body }}</p>
+  {% endfor %}
+{% endif %}
+
+{% endblock %}

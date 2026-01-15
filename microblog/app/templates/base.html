@@ -1,0 +1,12 @@
+<div>
+  <a href="/">Home</a>
+  {% if current_user.is_authenticated %}
+    <a href="/post">Escrever post</a>
+    <a href="/logout">Logout</a>
+  {% else %}
+    <a href="/login">Login</a>
+    <a href="/cadastro">Cadastro</a>
+  {% endif %}
+</div>
+<hr>
+{% block content %}{% endblock %}
